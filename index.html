@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubhash Pisike | Cybersecurity Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: #0a0f1c;
+            color: #e6edf3;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(90deg, #020617, #0a0f1c);
+            border-bottom: 2px solid #00ff9c;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #00ff9c;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #9fb3c8;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #e6edf3;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00ff9c;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h2 {
+            color: #00ff9c;
+            border-bottom: 1px solid #00ff9c;
+            padding-bottom: 5px;
+        }
+
+        .card {
+            background: #020617;
+            padding: 20px;
+            margin-top: 20px;
+            border-left: 4px solid #00ff9c;
+            border-radius: 6px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #00ff9c;
+            margin-top: 40px;
+            color: #9fb3c8;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 14px;
+            background: #00ff9c;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background: #00cc7a;
+        }
+
+        .typing {
+            border-right: 2px solid #00ff9c;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>SHUBHASH PISIKE</h1>
+        <p class="typing" id="typing"></p>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                Aspiring secure software developer with strong knowledge of secure coding
+                practices, OWASP standards, and cybersecurity fundamentals. Passionate about
+                building reliable, secure, and resilient software solutions with interest in
+                vulnerability assessment and secure application design.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="card">
+                <h3>Programming</h3>
+                <ul>
+                    <li>C, C++, Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML, CSS</li>
+                    <li>MERN Stack</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Cybersecurity</h3>
+                <ul>
+                    <li>OWASP Secure Coding</li>
+                    <li>Cryptography</li>
+                    <li>Network Security</li>
+                    <li>Secure SDLC</li>
+                    <li>Vulnerability Assessment</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Systems</h3>
+                <ul>
+                    <li>Linux Programming</li>
+                    <li>Networking Concepts</li>
+                    <li>Database Basics</li>
+                    <li>Secure Software Engineering</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="internships">
+        <h2>Internships & Training</h2>
+
+        <div class="card">
+            <h3>Techno Server for India TNSIF (JP Morgan Program)</h3>
+            <p>Java Full Stack Training </p>
+            <p>Mar 2024 – Jun 2024</p>
+            <p>
+                Completed Java Full Stack training including Spring Boot and
+                enterprise application development with real-time project exposure.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Edunet Foundation-Next Gen Employability Program</h3>
+            <p>Feb 2024 – Apr 2024</p>
+            <p>
+                Developed Car Rental Web Application using Python and Django.
+                Implemented authentication, database integration, and UI modules.
+                In Edunet Foundation got the Certification of Appreciation for Completed Full Stack Web Development and
+                Next
+                Gen Employability Program.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="card">
+            <h3>DoS Attack Detection and Mitigation</h3>
+            <p>
+                Developed a Python-based system to detect and reduce Denial of Service (DoS) attacks in a Linux
+                environment.
+                Built a custom HTTP server using socket programming to track and analyze incoming network requests.
+                Implemented a traffic monitoring mechanism to identify unusual request patterns and possible threats.
+                Integrated
+                firewall rules (iptables) to automatically block suspicious IP addresses. This project enhanced my
+                practical
+                knowledge of cybersecurity, networking concepts, and automated defense techniques.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Secure & Transparent KYC using Blockchain & IPFS</h3>
+            <p>
+                Developed a decentralized KYC verification platform integrating Blockchain and IPFS to ensure secure,
+                transparent, and tamper-proof customer data management for banking systems. Implemented smart contracts
+                for
+                authentication and data access control, reducing redundancy and verification time. Utilized IPFS, and
+                Blockchian
+                Technology for a scalable and trustless KYC infrastructure.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="card">
+            <h3>PG-Diploma in DASSD (Advanced Secure Software Development)</h3>
+            <p>Center for Development of Advanced Computing (CDAC) | Aug 2025 – Feb 2026</p>
+            <p>PG-Diploma in Advanced Secure Software Development (CDAC) with strong expertise in C,C++, Linux system
+                programming, cryptography, network security, and secure application development.
+                Trained in integrating software engineering with AI for cybersecurity best practices.</p>
+        </div>
+
+        <div class="card">
+            <h3>B.Tech – Computer Science & Engineering</h3>
+            <p>Teegala Krishna Reddy Engineering College</p>
+            <p> 2021-2025 </p>
+            <p>Bachelor of Technology in Computer Science & Engineering with strong foundation in programming, data
+                structures, operating systems, computer networks, and software engineering.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>📧 shubhashh27@gmail.com</p>
+            <p>📱 7286825672</p>
+
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Shubhash Pisike | Cybersecurity & Software Portfolio
+    </footer>
+
+    <script>
+        const text = "Cybersecurity Enthusiast | Secure Software Developer";
+        let i = 0;
+        function typingEffect() {
+            if (i < text.length) {
+                document.getElementById("typing").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typingEffect, 50);
+            }
+        }
+        typingEffect();
+    </script>
+
+</body>
+
+</html>
