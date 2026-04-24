@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubhash Pisike | Cybersecurity Portfolio</title>
+    <title>Shubhash Pisike | Secure Software Developer Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
         body {
@@ -12,36 +14,22 @@
             font-family: "Segoe UI", sans-serif;
             background: #0a0f1c;
             color: #e6edf3;
-            scroll-behavior: smooth;
         }
 
         header {
             text-align: center;
             padding: 40px 20px;
-            background: linear-gradient(90deg, #020617, #0a0f1c);
             border-bottom: 2px solid #00ff9c;
         }
 
         header h1 {
-            margin: 0;
             color: #00ff9c;
-            letter-spacing: 2px;
-        }
-
-        header p {
-            margin-top: 10px;
-            color: #9fb3c8;
-        }
-
-        nav {
-            margin-top: 20px;
         }
 
         nav a {
+            margin: 0 12px;
             color: #e6edf3;
-            margin: 0 15px;
             text-decoration: none;
-            font-weight: bold;
         }
 
         nav a:hover {
@@ -57,7 +45,6 @@
         h2 {
             color: #00ff9c;
             border-bottom: 1px solid #00ff9c;
-            padding-bottom: 5px;
         }
 
         .card {
@@ -65,25 +52,12 @@
             padding: 20px;
             margin-top: 20px;
             border-left: 4px solid #00ff9c;
-            border-radius: 6px;
         }
 
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-        }
-
-        ul {
-            padding-left: 18px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            border-top: 1px solid #00ff9c;
-            margin-top: 40px;
-            color: #9fb3c8;
         }
 
         .btn {
@@ -97,185 +71,287 @@
             border-radius: 4px;
         }
 
-        .btn:hover {
-            background: #00cc7a;
+        .timeline {
+            position: relative;
+            padding-left: 30px;
         }
 
-        .typing {
-            border-right: 2px solid #00ff9c;
-            white-space: nowrap;
-            overflow: hidden;
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            width: 2px;
+            height: 100%;
+            background: #00ff9c;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .timeline-item i {
+            position: absolute;
+            left: -2px;
+            top: 5px;
+            background: #00ff9c;
+            color: black;
+            padding: 8px;
+            border-radius: 50%;
+        }
+
+        .timeline-content {
+            margin-left: 30px;
+            background: #020617;
+            padding: 15px;
+            border-left: 3px solid #00ff9c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #00ff9c;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>SHUBHASH PISIKE</h1>
-        <p class="typing" id="typing"></p>
+<header>
+    <h1>SHUBHASH PISIKE</h1>
+    <p id="typing"></p>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#training">Training</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <section id="about">
-        <h2>About Me</h2>
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            Results-driven Computer Science graduate with strong expertise in Data Analysis, Python programming,
+            SQL, and Cybersecurity principles. Completed Post Graduate Diploma in Advanced Secure Software Development
+            at CDAC, gaining hands-on experience in secure coding, cryptography, and network security.
+        </p>
+        <p>
+            Skilled in extracting insights from large datasets, building analytical pipelines, and developing secure,
+            scalable applications. Passionate about leveraging data-driven decision making and cybersecurity best
+            practices to solve real-world problems.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+
         <div class="card">
+            <h3>Programming</h3>
             <p>
-                Aspiring secure software developer with strong knowledge of secure coding
-                practices, OWASP standards, and cybersecurity fundamentals. Passionate about
-                building reliable, secure, and resilient software solutions with interest in
-                vulnerability assessment and secure application design.
+                Proficient in Python, C, C++, and JavaScript with strong understanding of programming fundamentals,
+                problem solving, and algorithm design. Experienced in writing efficient, maintainable, and scalable code.
             </p>
         </div>
-    </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="card">
-                <h3>Programming</h3>
-                <ul>
-                    <li>C, C++, Python</li>
-                    <li>JavaScript</li>
-                    <li>HTML, CSS</li>
-                    <li>MERN Stack</li>
-                </ul>
+        <div class="card">
+            <h3>Data & Analytics</h3>
+            <p>
+                Strong knowledge of SQL (MySQL), data analysis, statistical methods, and data visualization using Power BI.
+                Experienced in handling structured datasets and generating actionable insights.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Machine Learning</h3>
+            <p>
+                Familiar with supervised and unsupervised learning techniques including classification and regression models.
+                Basic understanding of NLP concepts and data preprocessing techniques.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cybersecurity</h3>
+            <p>
+                Knowledge of OWASP Top 10, secure coding practices, network security, and vulnerability assessment.
+                Experience in Secure SDLC and implementing security mechanisms in applications.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>DoS Attack Detection and Mitigation</h3>
+        <p>
+            Developed a Python-based system to detect and mitigate Denial-of-Service (DoS) attacks in a Linux environment.
+            The system analyzed over 1000 network requests per minute to identify abnormal traffic patterns and anomalies.
+        </p>
+        <p>
+            Built a custom HTTP server using socket programming for deep packet inspection and logging of incoming requests.
+            Implemented real-time monitoring and automated IP blocking using iptables firewall rules, reducing response time
+            to threats by 40%.
+        </p>
+
+        <!-- Added GitHub Button -->
+        <a href="https://github.com/Shubhashh/dos-detection-mitigation" class="btn" target="_blank">
+            <i class="fab fa-github"></i> View Code on GitHub
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Secure & Transparent KYC System</h3>
+        <p>
+            Developed a decentralized KYC verification platform integrating Blockchain and IPFS to ensure secure,
+            transparent, and tamper-proof customer data management for banking systems.
+        </p>
+        <p>
+            Implemented smart contracts for authentication and access control, designed hash-based integrity checks,
+            and enabled real-time notifications for data access, reducing redundancy and improving verification security.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Parent-Hook: Child Tracking System</h3>
+        <p>
+            Built a child safety tracking system using QR codes and cloud-based URLs to enable real-time location monitoring.
+            Designed both mobile and web interfaces for easy accessibility and quick response.
+        </p>
+        <p>
+            Integrated cloud storage for secure and scalable data handling, ensuring reliable tracking and quick access
+            during emergency situations.
+        </p>
+    </div>
+
+</section>
+
+<section id="training">
+    <h2>Training & Internships</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <i class="fas fa-shield-alt"></i>
+            <div class="timeline-content">
+                <h3>PG-DASSD – CDAC Hyderabad (Aug 2025 – Feb 2026)</h3>
+                <p>
+                    Completed intensive training in secure software development, cryptography, and Linux security.
+                    Worked with network traffic logs and applied data-driven techniques to detect anomalies and vulnerabilities.
+                </p>
             </div>
+        </div>
 
-            <div class="card">
-                <h3>Cybersecurity</h3>
-                <ul>
-                    <li>OWASP Secure Coding</li>
-                    <li>Cryptography</li>
-                    <li>Network Security</li>
-                    <li>Secure SDLC</li>
-                    <li>Vulnerability Assessment</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Systems</h3>
-                <ul>
-                    <li>Linux Programming</li>
-                    <li>Networking Concepts</li>
-                    <li>Database Basics</li>
-                    <li>Secure Software Engineering</li>
-                </ul>
+        <div class="timeline-item">
+            <i class="fas fa-database"></i>
+            <div class="timeline-content">
+                <h3>TNSIF – JP Morgan Program (Mar 2024 – Jun 2024)</h3>
+                <p>
+                    Trained in MySQL, Core Java, Spring Boot, HTML, CSS, and JavaScript. Developed backend systems and
+                    improved SQL query optimization skills through real-world scenarios.
+                </p>
             </div>
         </div>
-    </section>
 
-    <section id="internships">
-        <h2>Internships & Training</h2>
-
-        <div class="card">
-            <h3>Techno Server for India TNSIF (JP Morgan Program)</h3>
-            <p>Java Full Stack Training </p>
-            <p>Mar 2024 – Jun 2024</p>
-            <p>
-                Completed Java Full Stack training including Spring Boot and
-                enterprise application development with real-time project exposure.
-            </p>
+        <div class="timeline-item">
+            <i class="fas fa-code"></i>
+            <div class="timeline-content">
+                <h3>Edunet Foundation – Full Stack (Feb 2024 – Apr 2024)</h3>
+                <p>
+                    Developed a Car Rental Web Application using Python and Django. Implemented authentication,
+                    REST APIs, and database integration for a complete full-stack solution.
+                </p>
+            </div>
         </div>
 
-        <div class="card">
-            <h3>Edunet Foundation-Next Gen Employability Program</h3>
-            <p>Feb 2024 – Apr 2024</p>
-            <p>
-                Developed Car Rental Web Application using Python and Django.
-                Implemented authentication, database integration, and UI modules.
-                In Edunet Foundation got the Certification of Appreciation for Completed Full Stack Web Development and
-                Next
-                Gen Employability Program.
-            </p>
+        <div class="timeline-item">
+            <i class="fas fa-chart-line"></i>
+            <div class="timeline-content">
+                <h3>Cloud & Data Analytics Training (Dec 2023 – Jan 2024)</h3>
+                <p>
+                    Gained hands-on experience in Azure Cloud, Power BI dashboards, and MySQL database management.
+                    Built data analytics applications and business intelligence reports.
+                </p>
+            </div>
         </div>
 
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="card">
-            <h3>DoS Attack Detection and Mitigation</h3>
-            <p>
-                Developed a Python-based system to detect and reduce Denial of Service (DoS) attacks in a Linux
-                environment.
-                Built a custom HTTP server using socket programming to track and analyze incoming network requests.
-                Implemented a traffic monitoring mechanism to identify unusual request patterns and possible threats.
-                Integrated
-                firewall rules (iptables) to automatically block suspicious IP addresses. This project enhanced my
-                practical
-                knowledge of cybersecurity, networking concepts, and automated defense techniques.
-            </p>
+        <div class="timeline-item">
+            <i class="fas fa-laptop-code"></i>
+            <div class="timeline-content">
+                <h3>Python Developer Internship – Mallikarjuna Infosys (Jul 2023 – Sep 2023)</h3>
+                <p>
+                    Developed Python scripts and automation modules in a professional development environment.
+                    Participated in backend development tasks and collaborative code reviews.
+                </p>
+            </div>
         </div>
 
-        <div class="card">
-            <h3>Secure & Transparent KYC using Blockchain & IPFS</h3>
-            <p>
-                Developed a decentralized KYC verification platform integrating Blockchain and IPFS to ensure secure,
-                transparent, and tamper-proof customer data management for banking systems. Implemented smart contracts
-                for
-                authentication and data access control, reducing redundancy and verification time. Utilized IPFS, and
-                Blockchian
-                Technology for a scalable and trustless KYC infrastructure.
-            </p>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <section id="education">
-        <h2>Education</h2>
+<section id="education">
+    <h2>Education</h2>
 
-        <div class="card">
-            <h3>PG-Diploma in DASSD (Advanced Secure Software Development)</h3>
-            <p>Center for Development of Advanced Computing (CDAC) | Aug 2025 – Feb 2026</p>
-            <p>PG-Diploma in Advanced Secure Software Development (CDAC) with strong expertise in C,C++, Linux system
-                programming, cryptography, network security, and secure application development.
-                Trained in integrating software engineering with AI for cybersecurity best practices.</p>
-        </div>
+    <div class="card">
+        <p>
+	    Teegala Krishna Reddy Engineering College-Hyderabad</br></br>
 
-        <div class="card">
-            <h3>B.Tech – Computer Science & Engineering</h3>
-            <p>Teegala Krishna Reddy Engineering College</p>
-            <p> 2021-2025 </p>
-            <p>Bachelor of Technology in Computer Science & Engineering with strong foundation in programming, data
-                structures, operating systems, computer networks, and software engineering.</p>
-        </div>
-    </section>
+            Bachelor of Technology in Computer Science & Engineering (2021 – 2025) with strong foundation in
+            programming, data structures, operating systems, and computer networks. CGPA: 7.63.
+        </p>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="card">
-            <p>📧 shubhashh27@gmail.com</p>
-            <p>📱 7286825672</p>
+    <!-- Added -->
+    <div class="card">
+        <h3>Intermediate (MPC)</h3>
+        <p>
+	    Sri Chaithanya Junior College-Khammam</br></br>
+            Completed Intermediate education with Mathematics, Physics, and Chemistry.
+        </p>
+    </div>
 
-        </div>
-    </section>
+    <div class="card">
+        <h3>Secondary School Certificate (SSC)</h3>
+        <p> Triveni School-Bhadradri Kothagudem</br></br>
+            Completed SSC with 9.7 CGPA out of 10 CGPA
+        </p>
+    </div>
 
-    <footer>
-        © 2026 Shubhash Pisike | Secure Software Developer
-    </footer>
+</section>
 
-    <script>
-        const text = "Cybersecurity Enthusiast | Secure Software Developer";
-        let i = 0;
-        function typingEffect() {
-            if (i < text.length) {
-                document.getElementById("typing").innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typingEffect, 50);
-            }
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        📧 shubhashh27@gmail.com <br>
+        📱 7286825672 <br>
+        📍 Hyderabad, India
+    </div>
+</section>
+
+<footer>
+    © 2026 Shubhash Pisike
+</footer>
+
+<script>
+    const text = "Secure Software Developer";
+    let i = 0;
+    function typingEffect() {
+        if (i < text.length) {
+            document.getElementById("typing").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typingEffect, 50);
         }
-        typingEffect();
-    </script>
+    }
+    typingEffect();
+</script>
 
 </body>
-
-
 </html>
